@@ -15,8 +15,8 @@ export default function Navbar() {
 
   return (
     <nav style={{
-      backgroundColor: '#fdf8f3',
-      borderBottom: '1px solid #e8ede6',
+      backgroundColor: '#ffffff',
+      borderBottom: '1px solid #e2eceb',
       position: 'sticky',
       top: 0,
       zIndex: 50,
@@ -28,15 +28,22 @@ export default function Navbar() {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        height: '4rem',
+        height: '3.75rem',
       }}>
         {/* Logo */}
-        <Link to="/" style={{ textDecoration: 'none' }}>
+        <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
           <span style={{
-            fontFamily: 'Lora, Georgia, serif',
+            width: '1.6rem', height: '1.6rem',
+            backgroundColor: '#2a9d8f',
+            borderRadius: '50%',
+            display: 'inline-flex', alignItems: 'center', justifyContent: 'center',
+            fontSize: '0.7rem', color: 'white', fontWeight: '800',
+          }}>N</span>
+          <span style={{
+            fontFamily: 'Inter, sans-serif',
             fontWeight: '700',
-            fontSize: '1.25rem',
-            color: '#3a5136',
+            fontSize: '1.05rem',
+            color: '#1a2e2b',
           }}>NeuroPais</span>
         </Link>
 
@@ -49,26 +56,24 @@ export default function Navbar() {
               style={{
                 textDecoration: 'none',
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '0.9rem',
+                fontSize: '0.875rem',
                 fontWeight: '500',
-                color: location.pathname === link.to ? '#3a5136' : '#6b7280',
-                borderBottom: location.pathname === link.to ? '2px solid #496543' : '2px solid transparent',
-                paddingBottom: '2px',
+                color: location.pathname === link.to ? '#2a9d8f' : '#4a5568',
                 transition: 'color 0.15s ease',
               }}
             >
               {link.label}
             </Link>
           ))}
-          <Link to="/avaliacao" className="btn-primary" style={{ fontSize: '0.875rem', padding: '0.5rem 1.25rem' }}>
-            Começar Avaliação
+          <Link to="/avaliacao" className="btn-primary" style={{ fontSize: '0.8rem', padding: '0.5rem 1.1rem' }}>
+            Começar Avaliação →
           </Link>
         </div>
 
         {/* Mobile hamburger */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#3a5136', display: 'none' }}
+          style={{ background: 'none', border: 'none', cursor: 'pointer', color: '#2a9d8f', display: 'none' }}
           className="mobile-menu-btn"
         >
           {menuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,8 +83,8 @@ export default function Navbar() {
       {/* Mobile menu */}
       {menuOpen && (
         <div style={{
-          backgroundColor: '#fdf8f3',
-          borderTop: '1px solid #e8ede6',
+          backgroundColor: '#ffffff',
+          borderTop: '1px solid #e2eceb',
           padding: '1rem 1.5rem',
           display: 'flex',
           flexDirection: 'column',
@@ -95,19 +100,14 @@ export default function Navbar() {
                 fontFamily: 'Inter, sans-serif',
                 fontSize: '1rem',
                 fontWeight: '500',
-                color: location.pathname === link.to ? '#3a5136' : '#4b5563',
+                color: location.pathname === link.to ? '#2a9d8f' : '#4a5568',
               }}
             >
               {link.label}
             </Link>
           ))}
-          <Link
-            to="/avaliacao"
-            className="btn-primary"
-            onClick={() => setMenuOpen(false)}
-            style={{ textAlign: 'center' }}
-          >
-            Começar Avaliação
+          <Link to="/avaliacao" className="btn-primary" onClick={() => setMenuOpen(false)} style={{ textAlign: 'center' }}>
+            Começar Avaliação →
           </Link>
         </div>
       )}

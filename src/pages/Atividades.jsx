@@ -88,7 +88,7 @@ export default function Atividades() {
     <div>
       {/* Header */}
       <section style={{
-        background: 'linear-gradient(135deg, #f5f7f4 0%, #e8ede6 100%)',
+        background: 'linear-gradient(135deg, #f7fafa 0%, #e2eceb 100%)',
         padding: '4rem 1.5rem 3rem',
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -97,7 +97,7 @@ export default function Atividades() {
             fontFamily: 'Lora, serif',
             fontWeight: '700',
             fontSize: 'clamp(1.75rem, 4vw, 2.75rem)',
-            color: '#2f412c',
+            color: '#1a2e2b',
             marginBottom: '1rem',
             maxWidth: '680px',
           }}>
@@ -146,7 +146,7 @@ export default function Atividades() {
               style={{
                 backgroundColor: 'white',
                 borderRadius: '1rem',
-                border: '1px solid #e8ede6',
+                border: '1px solid #e2eceb',
                 overflow: 'hidden',
               }}
             >
@@ -158,7 +158,7 @@ export default function Atividades() {
                   </span>
                   <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.75rem', color: '#9ca3af' }}>· {a.age}</span>
                 </div>
-                <h3 style={{ fontFamily: 'Lora, serif', fontWeight: '600', fontSize: '1.1rem', color: '#2f412c', marginBottom: '0.6rem' }}>
+                <h3 style={{ fontFamily: 'Lora, serif', fontWeight: '600', fontSize: '1.1rem', color: '#1a2e2b', marginBottom: '0.6rem' }}>
                   {a.title}
                 </h3>
                 <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.875rem', color: '#6b7280', lineHeight: '1.65', marginBottom: '1rem' }}>
@@ -174,7 +174,7 @@ export default function Atividades() {
                     fontFamily: 'Inter, sans-serif',
                     fontSize: '0.85rem',
                     fontWeight: '600',
-                    color: '#496543',
+                    color: '#2a9d8f',
                     padding: 0,
                   }}
                 >
@@ -185,7 +185,7 @@ export default function Atividades() {
                   <div style={{
                     marginTop: '1rem',
                     padding: '1rem',
-                    backgroundColor: '#f5f7f4',
+                    backgroundColor: '#f7fafa',
                     borderRadius: '0.75rem',
                     fontFamily: 'Inter, sans-serif',
                     fontSize: '0.875rem',

@@ -100,7 +100,7 @@ export default function Biblioteca() {
     <div>
       {/* Header */}
       <section style={{
-        background: 'linear-gradient(135deg, #f5f7f4 0%, #faeee1 100%)',
+        background: 'linear-gradient(135deg, #f7fafa 0%, #f7fafa 100%)',
         padding: '4rem 1.5rem 3rem',
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -109,7 +109,7 @@ export default function Biblioteca() {
             fontFamily: 'Lora, serif',
             fontWeight: '700',
             fontSize: 'clamp(1.75rem, 4vw, 2.75rem)',
-            color: '#2f412c',
+            color: '#1a2e2b',
             marginBottom: '1rem',
             maxWidth: '600px',
           }}>
@@ -158,7 +158,7 @@ export default function Biblioteca() {
               style={{
                 backgroundColor: 'white',
                 borderRadius: '1rem',
-                border: '1px solid #e8ede6',
+                border: '1px solid #e2eceb',
                 padding: '1.5rem',
                 display: 'flex',
                 flexDirection: 'column',
@@ -178,7 +178,7 @@ export default function Biblioteca() {
                 fontFamily: 'Lora, serif',
                 fontWeight: '600',
                 fontSize: '1.05rem',
-                color: '#2f412c',
+                color: '#1a2e2b',
                 lineHeight: '1.4',
               }}>
                 {a.title}
@@ -200,7 +200,7 @@ export default function Biblioteca() {
                   fontFamily: 'Inter, sans-serif',
                   fontSize: '0.85rem',
                   fontWeight: '600',
-                  color: '#496543',
+                  color: '#2a9d8f',
                 }}>Ler →</span>
               </div>
             </div>

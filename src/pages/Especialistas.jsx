@@ -35,7 +35,7 @@ const specialists = [
     city: 'benguela',
     phone: '+244 923 444 555',
     email: 'info@crescerbem.ao',
-    color: '#faeee1',
+    color: '#fef3c7',
     textColor: '#92400e',
   },
   {
@@ -59,8 +59,8 @@ const specialists = [
     city: 'lubango',
     phone: '+244 923 888 999',
     email: 'contacto@nucleolubango.ao',
-    color: '#e8ede6',
-    textColor: '#3a5136',
+    color: '#e2eceb',
+    textColor: '#1a7a6e',
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ export default function Especialistas() {
     <div>
       {/* Header */}
       <section style={{
-        background: 'linear-gradient(135deg, #f5f7f4 0%, #e8ede6 100%)',
+        background: 'linear-gradient(135deg, #f7fafa 0%, #e2eceb 100%)',
         padding: '4rem 1.5rem 3rem',
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -107,7 +107,7 @@ export default function Especialistas() {
             fontFamily: 'Lora, serif',
             fontWeight: '700',
             fontSize: 'clamp(1.75rem, 4vw, 2.75rem)',
-            color: '#2f412c',
+            color: '#1a2e2b',
             marginBottom: '1rem',
             maxWidth: '600px',
           }}>
@@ -135,7 +135,7 @@ export default function Especialistas() {
               maxWidth: '440px',
               padding: '0.75rem 1.25rem',
               borderRadius: '9999px',
-              border: '2px solid #d2dece',
+              border: '2px solid #c8dedd',
               fontFamily: 'Inter, sans-serif',
               fontSize: '0.9rem',
               outline: 'none',
@@ -188,7 +188,7 @@ export default function Especialistas() {
               style={{
                 backgroundColor: 'white',
                 borderRadius: '1rem',
-                border: '1px solid #e8ede6',
+                border: '1px solid #e2eceb',
                 padding: '1.5rem',
               }}
             >
@@ -206,7 +206,7 @@ export default function Especialistas() {
                   {s.initials}
                 </div>
                 <div>
-                  <h3 style={{ fontFamily: 'Lora, serif', fontWeight: '600', fontSize: '1rem', color: '#2f412c', marginBottom: '0.2rem' }}>
+                  <h3 style={{ fontFamily: 'Lora, serif', fontWeight: '600', fontSize: '1rem', color: '#1a2e2b', marginBottom: '0.2rem' }}>
                     {s.name}
                   </h3>
                   <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.8rem', color: '#6b7280' }}>{s.role}</p>
@@ -233,7 +233,7 @@ export default function Especialistas() {
                   textDecoration: 'none',
                   fontFamily: 'Inter, sans-serif',
                   fontSize: '0.85rem',
-                  color: '#496543',
+                  color: '#2a9d8f',
                 }}>
                   <Phone size={14} style={{ flexShrink: 0 }} />
                   {s.phone}
@@ -245,7 +245,7 @@ export default function Especialistas() {
                   textDecoration: 'none',
                   fontFamily: 'Inter, sans-serif',
                   fontSize: '0.85rem',
-                  color: '#496543',
+                  color: '#2a9d8f',
                   wordBreak: 'break-all',
                 }}>
                   <Mail size={14} style={{ flexShrink: 0 }} />

@@ -85,23 +85,23 @@ export default function Avaliacao() {
       <div style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '3rem 1.5rem' }}>
         <div style={{ maxWidth: '560px', textAlign: 'center' }}>
           <div style={{ marginBottom: '1.5rem' }}>
-            <CheckCircle size={56} style={{ color: '#496543', margin: '0 auto' }} />
+            <CheckCircle size={56} style={{ color: '#2a9d8f', margin: '0 auto' }} />
           </div>
-          <h2 style={{ fontFamily: 'Lora, serif', fontWeight: '700', fontSize: '2rem', color: '#2f412c', marginBottom: '1rem' }}>
+          <h2 style={{ fontFamily: 'Lora, serif', fontWeight: '700', fontSize: '2rem', color: '#1a2e2b', marginBottom: '1rem' }}>
             Obrigada pela confiança.
           </h2>
           <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '1rem', color: '#6b7280', lineHeight: '1.75', marginBottom: '1.5rem' }}>
             Com base nas suas respostas, recomendamos que explore as <strong>atividades diárias</strong> adequadas à idade da sua criança e consulte o nosso <strong>diretório de especialistas</strong> para apoio profissional perto de si.
           </p>
           <div style={{
-            backgroundColor: '#f5f7f4',
-            border: '1px solid #d2dece',
+            backgroundColor: '#f7fafa',
+            border: '1px solid #c8dedd',
             borderRadius: '1rem',
             padding: '1.5rem',
             marginBottom: '2rem',
             textAlign: 'left',
           }}>
-            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.875rem', color: '#496543', fontWeight: '600', marginBottom: '0.5rem' }}>
+            <p style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.875rem', color: '#2a9d8f', fontWeight: '600', marginBottom: '0.5rem' }}>
               Próximos passos sugeridos:
             </p>
             <ul style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.875rem', color: '#374151', lineHeight: '1.8', paddingLeft: '1.25rem' }}>
@@ -124,14 +124,14 @@ export default function Avaliacao() {
       <section style={{ padding: '5rem 1.5rem', minHeight: '70vh' }}>
         <div style={{ maxWidth: '680px', margin: '0 auto' }}>
           <div style={{
-            backgroundColor: '#e8ede6',
+            backgroundColor: '#e2eceb',
             borderRadius: '9999px',
             display: 'inline-block',
             padding: '0.3rem 1rem',
             fontFamily: 'Inter, sans-serif',
             fontSize: '0.8rem',
             fontWeight: '600',
-            color: '#496543',
+            color: '#2a9d8f',
             marginBottom: '1.5rem',
             letterSpacing: '0.05em',
           }}>🔒 Confidencial · só para ti</div>
@@ -140,7 +140,7 @@ export default function Avaliacao() {
             fontFamily: 'Lora, serif',
             fontWeight: '700',
             fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
-            color: '#2f412c',
+            color: '#1a2e2b',
             marginBottom: '1.5rem',
             lineHeight: '1.3',
           }}>
@@ -200,13 +200,13 @@ export default function Avaliacao() {
         <div style={{ marginBottom: '2.5rem' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>
             <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.8rem', color: '#9ca3af' }}>Pergunta {current + 1} de {questions.length}</span>
-            <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.8rem', color: '#496543', fontWeight: '600' }}>{Math.round(progress)}%</span>
+            <span style={{ fontFamily: 'Inter, sans-serif', fontSize: '0.8rem', color: '#2a9d8f', fontWeight: '600' }}>{Math.round(progress)}%</span>
           </div>
-          <div style={{ height: '6px', backgroundColor: '#e8ede6', borderRadius: '9999px' }}>
+          <div style={{ height: '6px', backgroundColor: '#e2eceb', borderRadius: '9999px' }}>
             <div style={{
               height: '100%',
               width: `${progress}%`,
-              backgroundColor: '#496543',
+              backgroundColor: '#2a9d8f',
               borderRadius: '9999px',
               transition: 'width 0.3s ease',
             }} />
@@ -218,7 +218,7 @@ export default function Avaliacao() {
           fontFamily: 'Lora, serif',
           fontWeight: '600',
           fontSize: 'clamp(1.2rem, 2.5vw, 1.5rem)',
-          color: '#2f412c',
+          color: '#1a2e2b',
           marginBottom: '2rem',
           lineHeight: '1.45',
         }}>
@@ -235,8 +235,8 @@ export default function Avaliacao() {
                 textAlign: 'left',
                 padding: '1rem 1.25rem',
                 borderRadius: '0.75rem',
-                border: answers[q.id] === opt ? '2px solid #496543' : '2px solid #e8ede6',
-                backgroundColor: answers[q.id] === opt ? '#f5f7f4' : 'white',
+                border: answers[q.id] === opt ? '2px solid #2a9d8f' : '2px solid #e2eceb',
+                backgroundColor: answers[q.id] === opt ? '#f7fafa' : 'white',
                 fontFamily: 'Inter, sans-serif',
                 fontSize: '0.95rem',
                 color: '#374151',
